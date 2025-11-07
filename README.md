@@ -1,2 +1,2 @@
 # wtfroichi.github.io
-Personal docs
+Personal docs and portfolio for personal use
