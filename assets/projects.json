@@ -1,0 +1,38 @@
+[
+  {
+    "name": "NeoTwitter",
+    "html_url": "https://github.com/wtfroichi/NeoTwitter",
+    "description": "Make twitter great again!",
+    "language": null,
+    "homepage": null,
+    "fork": false,
+    "updated_at": "2025-10-31T10:59:45Z"
+  },
+  {
+    "name": "online-omnichord-AZERTY",
+    "html_url": "https://github.com/wtfroichi/online-omnichord-AZERTY",
+    "description": "OM27, online",
+    "language": "JavaScript",
+    "homepage": "http://dev.rprieto.com/online-omnichord-AZERTY/",
+    "fork": true,
+    "updated_at": "2026-09-01T13:15:38Z"
+  },
+  {
+    "name": "NeoFreeBird-app-port",
+    "html_url": "https://github.com/wtfroichi/NeoFreeBird-app-port",
+    "description": "A modified Twitter app, with branding reverts and QoL modifications.",
+    "language": "CSS",
+    "homepage": "https://neofreebird.aridan.net",
+    "fork": true,
+    "updated_at": "2026-06-19T10:55:23Z"
+  },
+  {
+    "name": "wtfroichi.github.io",
+    "html_url": "https://github.com/wtfroichi/wtfroichi.github.io",
+    "description": "Personal docs",
+    "language": "HTML",
+    "homepage": null,
+    "fork": false,
+    "updated_at": "2025-11-10T10:40:35Z"
+  }
+]
