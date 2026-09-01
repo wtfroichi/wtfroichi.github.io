@@ -1,0 +1,74 @@
+/* Hacker aesthetic styles for wtfroichi.github.io */
+:root{
+  --bg:#030305;
+  --panel:#071013;
+  --neon:#00ff6a;
+  --neon-2:#00e656;
+  --muted:#8fa3a3;
+  --accent:#ff00c8;
+  --glass: rgba(255,255,255,0.03);
+  --card-border: rgba(0,255,106,0.08);
+  --radius:10px;
+  --mono: "Roboto Mono", "Courier New", Courier, monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--mono);
+  background:radial-gradient(ellipse at 10% 10%, rgba(0,255,100,0.02), transparent 10%),
+             linear-gradient(180deg, var(--bg), #001018 60%);
+  color:var(--neon);
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+}
+/* subtle scanlines */
+body::after{
+  content:"";
+  position:fixed;inset:0;pointer-events:none;mix-blend-mode:overlay;
+  background-image: linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size:100% 4px;opacity:0.35;
+}
+.container{max-width:1100px;margin:0 auto;padding:28px}
+header{position:sticky;top:0;background:transparent;padding:18px 0;z-index:40}
+nav{display:flex;justify-content:space-between;align-items:center}
+.nav-logo{color:var(--neon);font-size:20px;text-decoration:none}
+.nav-links{display:flex;gap:18px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:6px}
+.nav-links a:hover{color:var(--neon);box-shadow:0 0 18px rgba(0,255,106,0.06),0 0 2px rgba(0,255,106,0.12) inset}
+.theme-toggle{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted);padding:6px;border-radius:6px}
+.theme-toggle:hover{color:var(--neon)}
+/* Hero */
+.hero{padding:64px 20px;text-align:left}
+.hero{position:relative;padding:64px 20px;text-align:left;overflow:hidden}
+.hero h1{font-size:48px;color:var(--neon);letter-spacing:1px;margin:0}
+.hero .tagline{color:var(--muted);margin-top:12px;font-size:16px;max-width:720px}
+.matrix-canvas{position:absolute;left:0;top:0;width:100%;height:35%;pointer-events:none;mix-blend-mode:screen;opacity:0.85}
+.decorative-line{height:2px;background:linear-gradient(90deg,transparent,var(--neon),transparent);margin:24px 0}
+/* Sections */
+section{padding:48px 20px}
+.section-title{color:var(--neon);font-size:18px;margin-bottom:18px}
+.about-bio{background:linear-gradient(180deg, rgba(0,0,0,0.3), rgba(255,255,255,0.01));padding:16px;border-radius:8px;border:1px solid rgba(0,255,106,0.04);color:var(--muted)}
+/* Projects grid */
+.projects-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:18px}
+.project-item{background:linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.18));padding:16px;border-radius:var(--radius);border:1px solid var(--card-border);color:var(--neon);display:flex;flex-direction:column;gap:12px;min-height:120px}
+.project-item h3{font-size:16px;margin:0}
+.project-item h3 a{color:var(--neon);text-decoration:none}
+.project-item p{color:var(--muted);font-size:14px;margin:0}
+.project-meta{background:rgba(0,255,106,0.06);color:var(--neon-2);padding:6px 10px;border-radius:999px;font-size:12px}
+.project-link{color:var(--accent);text-decoration:none}
+.project-item:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(0,255,106,0.06),0 0 40px rgba(0,255,106,0.02)}
+/* Contact */
+.contact-list{display:flex;flex-direction:column;gap:8px;color:var(--muted)}
+.contact-list a{color:var(--neon);text-decoration:none}
+footer{padding:28px 20px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02)}
+/* Small screens */
+@media(max-width:680px){.hero h1{font-size:34px}.projects-list{grid-template-columns:1fr}}
+/* subtle cursor effect */
+.cursor-fade{transition:opacity 220ms}
+/* glowing accent for social links */
+.social-links a{border:1px dashed rgba(0,255,106,0.06);padding:8px 12px;border-radius:6px;color:var(--muted);text-decoration:none}
+.social-links a:hover{color:var(--neon);box-shadow:0 0 20px rgba(0,255,106,0.06)}
+.social-cta{background:transparent;border:1px solid rgba(255,255,255,0.03);padding:8px 12px;border-radius:8px;color:var(--muted);text-decoration:none}
+.social-cta:hover{color:var(--neon);border-color:rgba(0,255,106,0.08);box-shadow:0 8px 24px rgba(0,255,106,0.04)}
+/* small util */
+.hidden{display:none}
