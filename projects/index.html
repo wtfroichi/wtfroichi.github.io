@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Proyectos — wtfroichi</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="/" class="nav-logo">wtfroichi</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="listView">
+      <h2 class="section-title">Proyectos</h2>
+      <div id="projectsGrid" class="projects-list">Cargando...</div>
+    </section>
+
+    <section id="detailView" class="hidden">
+      <button id="backBtn" style="margin-bottom:16px;">← Volver a lista</button>
+      <div id="projectDetail"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>wtfroichi — Santiago de Compostela</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="/projects/app.js"></script>
+</body>
+</html>
