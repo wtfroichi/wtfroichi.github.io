@@ -18,7 +18,7 @@
                 <li><a href="#about">sobre</a></li>
                 <li><a href="#projects">proyectos</a></li>
                 <li><a href="#contact">contacto</a></li>
-                <li><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☾</button></li>
+                <li><button class="theme-toggle hidden" id="themeToggle" aria-label="Toggle theme">☾</button></li>
             </ul>
         </nav>
     </header>
@@ -95,28 +95,55 @@
 
         // =====================================
         // THEME MANAGEMENT
-        // Uses JavaScript variable for state management (no localStorage in sandbox)
+        // Show the toggle only if there are CSS rules for `[data-theme]` (day/night styles)
         // =====================================
         let currentTheme = 'light';
         const themeToggle = document.getElementById('themeToggle');
-        
+
         function setTheme(theme) {
             currentTheme = theme;
             document.documentElement.setAttribute('data-theme', theme);
         }
-        
-        // Check system preference on load
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            setTheme('dark');
-            themeToggle.textContent = '☀';
-        } else {
-            themeToggle.textContent = '☾';
+
+        function cssHasDataThemeRule() {
+            try {
+                for (const sheet of document.styleSheets) {
+                    try {
+                        const rules = sheet.cssRules || sheet.rules;
+                        for (const r of rules) {
+                            if (r.selectorText && r.selectorText.indexOf('[data-theme') !== -1) return true;
+                        }
+                    } catch (e) {
+                        // ignore CORS or invalid stylesheet
+                        continue;
+                    }
+                }
+            } catch (e) {
+                return false;
+            }
+            return false;
         }
-        
-        themeToggle.addEventListener('click', () => {
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            themeToggle.textContent = newTheme === 'dark' ? '☀' : '☾';
-            setTheme(newTheme);
+
+        // Initialize theme toggle only when DOM is ready and when styles support it
+        document.addEventListener('DOMContentLoaded', () => {
+            if (cssHasDataThemeRule()) {
+                themeToggle.classList.remove('hidden');
+
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    setTheme('dark');
+                    themeToggle.textContent = '☀';
+                } else {
+                    themeToggle.textContent = '☾';
+                }
+
+                themeToggle.addEventListener('click', () => {
+                    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                    themeToggle.textContent = newTheme === 'dark' ? '☀' : '☾';
+                    setTheme(newTheme);
+                });
+            } else {
+                themeToggle.classList.add('hidden');
+            }
         });
 
         // =====================================
