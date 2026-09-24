@@ -1,38 +1,58 @@
 [
   {
+    "name": "NeoFreeBird-app-port",
+    "full_name": "wtfroichi/NeoFreeBird-app-port",
+    "html_url": "https://github.com/wtfroichi/NeoFreeBird-app-port",
+    "description": "A modified Twitter app, with branding reverts, BHTwitter and other QoL modifications.",
+    "language": "CSS",
+    "homepage": "https://neofreebird.aridan.net",
+    "fork": true,
+    "updated_at": "2026-06-19T10:55:23Z",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "open_issues_count": 0,
+    "readme": "<div align=\"center\">\n    <img src=\"./Branding/Icon_rounded.png\" alt=\"NeoFreeBird\" width=\"130\" height=\"130\">\n \n  # NeoFreeBird\n  <i>The Twitter app that you deserve</i>\n\n  <p>\n    A modified Twitter/X app for iOS/iPadOS devices with branding reverts, <a href=\"https://github.com/actuallyaridan/NeoFreeBird-BHTwitter\"> a new updated BHTwitter</a>, and many other useful features.\n  </p>\n\n  <div>\n    <a href=\"https://intradeus.github.io/http-protocol-redirector?r=altstore://source?url=https://raw.githubusercontent.com/actuallyaridan/NeoFreeBird/refs/heads/main/AltSource.json\"><img src=\"./Branding/badges/add_to_altstore.png\" alt=\"Add to AltStore\" height=\"40\"></a>\n    &nbsp;\n    <a href=\"https://intradeus.github.io/http-protocol-redirector?r=sidestore://source?url=https://raw.githubusercontent.com/actuallyaridan/NeoFreeBird/refs/heads/main/AltSource.json\"><img src=\"./Branding/badges/add_to_sidestore.png\" alt=\"Add to SideStore\" height=\"40\"></a>\n    &nbsp;\n    <a href=\"https://intradeus.github.io/http-protocol-redirector?r=feather://source/https://raw.githubusercontent.com/actuallyaridan/NeoFreeBird/refs/heads/main/AltSource.json\"><img src=\"./Branding/badges/add_to_feather.png\" alt=\"Add to Feather\" height=\"40\"></a>\n    &nbsp;\n  </div>\n</div>\n<br>\n\n> [!WARNING]  \n> <b>Please do not create issues regarding sign in or Tweeting.</b><br>Twitter/X have added Attestation to prevent the use of third-paty or modified clients. We cannot do anything against this. Please do not create new issues regarding this. \n\n| | | |\n|:-------------------------:|:-------------------------:|:-------------------------:|\n| <img src=\"./Branding/screenshots/IMG_9189.png\" alt=\"Screenshot 1\"> | <img src=\"./Branding/screenshots/IMG_9190.png\" alt=\"Screenshot 2\"> | <img src=\"./Branding/screenshots/IMG_9191.png\" alt=\"Screenshot 3\"> |\n| <img src=\"./Branding/screenshots/IMG_9201.png\" alt=\"Screenshot 4\"> | <img src=\"./Branding/screenshots/IMG_9202.png\" alt=\"Screenshot 5\"> | <img src=\"./Branding/screenshots/IMG_9200.png\" alt=\"Screenshot 6\"> |\n\n\n\n## Features\nNeoFreeBird uses a modern app version with various changes such as branding reverts, removal of unnecessary features, along with our own fork of BHTwitter for blocking ads, getting various Twitter Blue features for free and being able to customize Twitter in various ways. Theres tons of new features to try!\n\n| | | |\n|:-------------------------:|:-------------------------:|:-------------------------:|\n| ![](./Branding/screenshots/IMG_9192.png) | ![](./Branding/screenshots/IMG_9193.png) | ![](./Branding/screenshots/IMG_9194.png) |\n| ![](./Branding/screenshots/IMG_9195.png) | ![](./Branding/screenshots/IMG_9196.png) | ![](./Branding/screenshots/IMG_9198.png) |\n| ![](./Branding/screenshots/IMG_9199.png) |   |   |\n\n> [!NOTE]  \n> <b>There are some remains</b><br>You may still see some X branding in web based stuff. We try our best to get rid of most of them.\n"
+  },
+  {
     "name": "NeoTwitter",
+    "full_name": "wtfroichi/NeoTwitter",
     "html_url": "https://github.com/wtfroichi/NeoTwitter",
     "description": "Make twitter great again!",
     "language": null,
     "homepage": null,
     "fork": false,
-    "updated_at": "2025-10-31T10:59:45Z"
+    "updated_at": "2025-10-31T10:59:45Z",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "open_issues_count": 0,
+    "readme": "<div align=\"center\">\n    <img src=\"./Branding/Icon_rounded.png\" alt=\"NeoFreeBird\" width=\"130\" height=\"130\">\n \n  # NeoTwitter\n  <i>Make twitter great again!</i>\n\n<a> This is a simple AltStore repo logging my favorite alternatives of rebranding Twitter as X.\n\n <div>\n    <a href=\"https://intradeus.github.io/http-protocol-redirector?r=altstore://source?url=https://raw.githubusercontent.com/wtfroichi/NeoTwitter/refs/heads/main/ClassicSource.json\"><img src=\"./Branding/badges/add_to_altstore.png\" alt=\"Add to AltStore\" height=\"40\"></a>\n    &nbsp;\n    <a href=\"https://intradeus.github.io/http-protocol-redirector?r=sidestore://source?url=https://raw.githubusercontent.com/wtfroichi/NeoTwitter/refs/heads/main/ClassicSource.json\"><img src=\"./Branding/badges/add_to_sidestore.png\" alt=\"Add to SideStore\" height=\"40\"></a>\n    &nbsp;\n    <a href=\"https://intradeus.github.io/http-protocol-redirector?r=feather://source/https://raw.githubusercontent.com/wtfroichi/NeoTwitter/refs/heads/main/ClassicSource.json\"><img src=\"./Branding/badges/add_to_feather.png\" alt=\"Add to Feather\" height=\"40\"></a>\n    &nbsp;\n  </div>\n\nThanks to everyone supporting the cause and making all projects, I'm just putting them together!\n"
   },
   {
     "name": "online-omnichord-AZERTY",
+    "full_name": "wtfroichi/online-omnichord-AZERTY",
     "html_url": "https://github.com/wtfroichi/online-omnichord-AZERTY",
     "description": "OM27, online",
     "language": "JavaScript",
     "homepage": "http://dev.rprieto.com/online-omnichord-AZERTY/",
     "fork": true,
-    "updated_at": "2026-09-01T13:15:38Z"
-  },
-  {
-    "name": "NeoFreeBird-app-port",
-    "html_url": "https://github.com/wtfroichi/NeoFreeBird-app-port",
-    "description": "A modified Twitter app, with branding reverts and QoL modifications.",
-    "language": "CSS",
-    "homepage": "https://neofreebird.aridan.net",
-    "fork": true,
-    "updated_at": "2026-06-19T10:55:23Z"
+    "updated_at": "2026-09-01T13:57:01Z",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "open_issues_count": 0,
+    "readme": "# An online omnichord forked to use AZERTY french keyboards brought by @arcticmatt.\n\nPlay it [here](http://dev.rprieto.com/online-omnichord-AZERTY/).\nView instructions [here](http://www.onlineomnichord.com/info).\n\n![terminal-gif](Omnichord.gif)\n\n"
   },
   {
     "name": "wtfroichi.github.io",
+    "full_name": "wtfroichi/wtfroichi.github.io",
     "html_url": "https://github.com/wtfroichi/wtfroichi.github.io",
     "description": "Personal docs",
     "language": "HTML",
     "homepage": null,
     "fork": false,
-    "updated_at": "2025-11-10T10:40:35Z"
+    "updated_at": "2026-09-24T11:19:46Z",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "open_issues_count": 0,
+    "readme": "# wtfroichi.github.io\nPersonal portfolio and project showcase for Roi (wtfroichi).\n\nThis repo contains a static site that lists public GitHub projects and presents audiovisual + code work with a hacker/neon aesthetic.\n\nWhat's included:\n- `index.html` — main site (hero, about, projects, contact)\n- `assets/styles.css` — neon hacker styles\n- `assets/projects.json` — embedded snapshot of public repos (falls back to GitHub API)\n- `assets/favicon.svg` — simple neon favicon\n\nTo update the embedded projects list automatically, fetch the GitHub API and overwrite `assets/projects.json`.\n"
   }
 ]
